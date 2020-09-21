@@ -11,7 +11,7 @@ pipeline {
 
         stage('') {
           steps {
-            build 'build-lumen-container'
+            readTrusted 'https://github.com/XaiMendez/pipeline-build-lumen-app/blob/master/Jenkinsfile'
           }
         }
 
